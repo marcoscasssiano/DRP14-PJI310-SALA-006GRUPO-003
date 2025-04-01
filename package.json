@@ -1,0 +1,41 @@
+{
+  "name": "estudodeestabilidade",
+  "version": "1.0.0",
+  "description": "Software web para criação de fichas de estudos de estabilidade de cosméticos.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRP14-PJI240-SALA-006GRUPO-006/estudodeestabilidade.git"
+  },
+  "author": "Marcos Cassiano - marcoscassiano@outlook.com.br",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DRP14-PJI240-SALA-006GRUPO-006/estudodeestabilidade/issues"
+  },
+  "homepage": "https://github.com/DRP14-PJI240-SALA-006GRUPO-006/estudodeestabilidade#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^3.0.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.5.2",
+    "mongoose-sequence": "^6.0.1",
+    "morgan": "^1.10.0",
+    "openai": "^4.89.0",
+    "path": "^0.12.7",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
