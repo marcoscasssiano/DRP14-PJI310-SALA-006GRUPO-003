@@ -1,0 +1,1 @@
+sessionStorage.token ? window.location.href = '/studies' : window.location.href = '/login';

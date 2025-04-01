@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização do Estudo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/view.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-buttons">
+            <button id="backButton" class="back-btn" onclick="window.location.href = '/';"">Voltar</button>
+            <div class="right-buttons">
+                <button id="saveButton" class="save-btn">Salvar</button>
+                <button id="deleteButton" class="delete-btn">Deletar</button>
+            </div>
+        </div>
+
+        <h1>ESTUDO DE ESTABILIDADE</h1>
+
+        <p><strong>Produto:</strong> <span id="product"></span></p>
+        <p><strong>Lote:</strong> <span id="lot"></span></p>
+        <p><strong>Natureza:</strong> <span id="nature"></span></p>
+
+        <div class="wrapper">
+            <div class="blocoA">
+                <div class="leituraInicial">Leitura Inicial</div>
+                <section class="initialReading grid-inital-reading">
+                    <div class="item Data">Data</div>
+                    <div class="item DataValue"><span id="startDate"></span></div>
+                    <div class="item Aspecto">Aspecto</div>
+                    <div class="item AspectoValue"><span id="aspect"></span></div>
+                    <div class="item Cor">Cor</div>
+                    <div class="item CorValue"><span id="color"></span></div>
+                    <div class="item Odor">Odor</div>
+                    <div class="item OdorValue"><span id="odor"></span></div>
+                    <div class="item pH">pH</div>
+                    <div class="item pHValue"><span id="pH"></span></div>
+                    <div class="item Viscosidade">Viscosidade</div>
+                    <div class="item ViscosidadeValue"><span id="viscosity"></span></div>
+                </section>
+            </div>
+            <div class="blocoB">
+                <div class="legenda">Legenda</div><wbr>
+                <section class="legendaGrid grid-legenda">
+                    <div class="item IN">IN</div>
+                    <div class="item inalterado">INALTERADO</div>
+                    <div class="item LA">LA</div>
+                    <div class="item levementeAlterado">LEVEMENTE ALTERADO</div>
+                    <div class="item A">A</div>
+                    <div class="item alteracao">ALTERAÇÃO</div>
+                </section>
+            </div>
+        </div>
+        <div id="conditionsTables"></div>
+
+        <div id="approvedAndResponsible"></div>
+    </div>
+    <script src="/js/view.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/studies.css">
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Estudos</h1>
+
+        <div class="actions-row">
+            <div class="left-actions">
+                <a href="/studies/create" class="create-study-btn">CRIAR NOVO ESTUDO</a>
+            </div>
+            <div class="right-actions">
+                <input type="text" id="search-input" placeholder="Pesquisar por nome do produto">
+                <select id="sort-select">
+                    <option value="newest">Mais novo para mais antigo</option>
+                    <option value="oldest">Mais antigo para mais novo</option>
+                    <option value="next-analysis">Próxima análise mais próxima</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="studies-list" id="studies-list"></div>
+        <!-- Pop-up de carregamento -->
+        <div id="loading-popup" class="popup">
+            <div class="popup-content">
+                <img src="/images/loading.gif" alt="Carregando..." class="loading-image" />
+                <p>Carregando análise...</p>
+            </div>
+        </div>
+
+        <!-- Pop-up de resposta da IA -->
+        <div id="response-popup" class="popup">
+            <div class="popup-content">
+                <h2>Análise da IA</h2>
+                <p id="ia-response-text"></p>
+                <button id="close-popup">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <div id="loading-popup" class="popup">
+        <div class="popup-content">
+            <div class="loading-spinner"></div>
+            <p>Analisando os dados do estudo...</p>
+        </div>
+    </div>
+
+    <!-- Pop-up de resposta -->
+    <div id="response-popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>📊 Análise Avançada</h2>
+                <button id="close-popup" class="close-btn">&times;</button>
+            </div>
+            <div id="ia-response-text" class="markdown-content"></div>
+        </div>
+    </div>
+    <script src="/js/studies.js"></script>
+    <script src="/js/generatePDF.js"></script>
+</body>
+
+</html>

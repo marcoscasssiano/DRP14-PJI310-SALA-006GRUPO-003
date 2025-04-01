@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Stability Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/create.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-buttons">
+            <button id="backButton" class="back-btn" onclick="window.location.href = '/';">Voltar</button>
+        </div>
+        <h1>NOVO ESTUDO:</h1>
+        <form id="create-study-form" class="study-form">
+            <div class="form-group">
+                <label for="product">Produto:</label>
+                <input type="text" id="product" name="product" required>
+            </div>
+            <div class="form-group">
+                <label for="lot">Lote:</label>
+                <input type="text" id="lot" name="lot" required>
+            </div>
+            <div class="form-group">
+                <label for="nature">Natureza:</label>
+                <input type="text" id="nature" name="nature" required>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Data Inicial:</label>
+                <input type="date" id="startDate" name="startDate" required>
+            </div>
+
+            <h2>Condições Iniciais:</h2>
+            <div id="initial-conditions" class="initial-conditions">
+                <div class="form-group">
+                    <label for="aspect">Aspecto:</label>
+                    <input type="text" id="aspect" name="initialConditions[aspect]">
+                </div>
+                <div class="form-group">
+                    <label for="color">Cor::</label>
+                    <input type="text" id="color" name="initialConditions[color]">
+                </div>
+                <div class="form-group">
+                    <label for="odor">Odor:</label>
+                    <input type="text" id="odor" name="initialConditions[odor]">
+                </div>
+                <div class="form-group">
+                    <label for="pH">pH:</label>
+                    <input type="text" id="pH" name="initialConditions[pH]">
+                </div>
+                <div class="form-group">
+                    <label for="viscosity">Viscosidade:</label>
+                    <input type="text" id="viscosity" name="initialConditions[viscosity]">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="responsible">Responsável:</label>
+                <input type="text" id="responsible" name="responsible" required>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <label for="approved">
+                    <input type="checkbox" id="approved" name="approved">
+                    Aprovado?
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="commentText">Comentário inicial:</label>
+                <textarea id="commentText" name="comment"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">CRIAR ESTUDO</button>
+        </form>
+    </div>
+    <script src="/js/create.js"></script>
+</body>
+</html>
