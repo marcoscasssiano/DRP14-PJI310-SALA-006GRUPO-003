@@ -57,14 +57,12 @@ async function generatePDF(studyId, includeIAnalysis = false, iaResponse = null)
         if (includeIAnalysis && iaResponse) {
             doc.addPage();
             doc.setFontSize(16);
-            doc.text('Análise Técnica por IA', 105, 20, { align: 'center' });
+            doc.text('Análise Gerada por Inteligência Artificial:', 105, 20, { align: 'center' });
             
             //Formata o texto da IA para caber no PDF
             const formattedIAText = iaResponse
     .replace(/<li>/gi, '• ')  // Converte itens de lista
     .replace(/<[^>]*>/g, '')  // Remove outras tags
-    .replace(/\*\*/g, '')     // Remove negritos
-    .replace(/\n\n+/g, '\n')  // Normaliza quebras
     .trim();
             
             doc.setFontSize(12);
@@ -74,13 +72,13 @@ async function generatePDF(studyId, includeIAnalysis = false, iaResponse = null)
             });
             
             // Adiciona selo de "Análise IA"
-            doc.setFontSize(10);
+            doc.setFontSize(8);
             doc.setTextColor(100, 100, 255);
-            doc.text('✓ Análise gerada por IA - ' + new Date().toLocaleDateString(), 160, 285);
+            doc.text(' Essa analise foi gerada por inteligência artificil, em caso de dúvidas consulte um especialista.', 50, 285);
         }
 
         // Rodapé
-        const footerY = doc.internal.pageSize.height - 10;
+        const footerY = doc.internal.pageSize.height - 5;
         doc.setFontSize(10);
         doc.setTextColor(100, 100, 100);
         doc.text(`Relatório gerado em ${new Date().toLocaleString()}`, 105, footerY, { align: 'center' });
