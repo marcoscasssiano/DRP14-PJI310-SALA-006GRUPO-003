@@ -1,5 +1,5 @@
-**UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO**
-
+**UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO**<br>
+**PROJETO INTEGRADOR 3**
 ```
 Ana Carolina Neias do Amaral Scabora
 Felipe de Godoi Cardoso
@@ -14,13 +14,9 @@ grupo: DRP14-PJI310-SALA-006GRUPO-003
 **TEMA:<br/> 
 _Implementação de APIs para geração de relatórios em PDF e análise inteligente de dados com IA para identificação de tendências e insights_**
 
-São Paulo - SP
-
-
-```
+São Paulo - SP<br/>
 2025
-UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO
-```
+
 
 ```
 Relatório Técnico-Científico apresentado na
@@ -30,10 +26,6 @@ Computação e Tecnologia da Informação da
 Universidade Virtual do Estado de São Paulo
 (UNIVESP).
 ```
-
-São Paulo - SP
-
-2025
 AMORIM, Rodolfo Ferraz de; ARAUJO, Jessica Cavalcante de Oliveira; CARDOSO, Felipe
 de Godoi; FALCONI, Tatiane Maris Gorska; MENEZES, Vanessa do Nascimento,
 SARAIVA, Marcos Cassiano Santos; SCARBORA, Ana Carolina Neias do Amaral.
@@ -590,6 +582,7 @@ ORIQUI, L. R.; MORI, M.; WONGTSCHOWSKI, P. Guia para a determinação da
 estabilidade de produtos químicos. 2013. Disponível em:
 <https://www.scielo.br/j/qn/a/j4Sw98QcpGJ9XGPDFpZpRjF/>. Acesso em 22 de março de
 2025.
+
 
 
 
