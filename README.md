@@ -8,10 +8,11 @@ Marcos Cassiano Santos Saraiva
 Rodolfo Ferraz de Amorim
 Tatiane Maris Gorska Falconi
 Vanessa do Nascimento Menezes
-```
-**_Implementação de APIs para geração de relatórios em PDF e análise_**
 
-**_inteligente de dados com IA para identificação de tendências e insights_**
+grupo: DRP14-PJI310-SALA-006GRUPO-003
+```
+**TEMA:<br/> 
+_Implementação de APIs para geração de relatórios em PDF e análise inteligente de dados com IA para identificação de tendências e insights_**
 
 São Paulo - SP
 
@@ -20,9 +21,6 @@ São Paulo - SP
 2025
 UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO
 ```
-**_Implementação de APIs para geração de relatórios em PDF e análise_**
-
-**_inteligente de dados com IA para identificação de tendências e insights_**
 
 ```
 Relatório Técnico-Científico apresentado na
@@ -592,5 +590,6 @@ ORIQUI, L. R.; MORI, M.; WONGTSCHOWSKI, P. Guia para a determinação da
 estabilidade de produtos químicos. 2013. Disponível em:
 <https://www.scielo.br/j/qn/a/j4Sw98QcpGJ9XGPDFpZpRjF/>. Acesso em 22 de março de
 2025.
+
 
 
